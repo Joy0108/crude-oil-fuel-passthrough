@@ -1,0 +1,11 @@
+check_name,status,violations,detail
+panel_has_176_months,PASS,0,"176 rows, expected 176"
+no_gaps_in_monthly_index,PASS,0,every step between consecutive months is exactly 1 month
+complete_months_form_one_run,PASS,0,2012-03-01 to 2026-10-01 (176 months)
+brent_source_has_every_month,PASS,0,no month missing
+no_nulls_in_panel,PASS,0,brent=0 fx=0 crude_inr=0 petrol=0
+petrol_price_known_every_day,PASS,0,all months fully covered
+daily_petrol_feed_has_no_missing_days,PASS,0,consecutive days only
+crude_conversion_consistent,PASS,0,max abs deviation = 0.000076
+fx_month_has_15_plus_trading_days,PASS,0,min trading days in a month = 18
+large_moves_brent_30pct_or_petrol_7pct,WARN,9,"2015-05 (brent 7.7%, petrol 8.7%), 2018-12 (brent -11.4%, petrol -8.2%), 2020-03 (brent -42.5%, petrol -2.9%), 2020-04 (brent -42.6%, petrol -0.8%), 2020-05 (brent 59.8%, petrol 2.1%), 2020-06 (brent 37.1%, petrol 7.1%), 2021-12 (brent -8.5%, petrol -8.5%), 2022-04 (brent -10.8%, petrol 8.8%), 2026-03 (brent 45.5%, petrol 0.0%)"

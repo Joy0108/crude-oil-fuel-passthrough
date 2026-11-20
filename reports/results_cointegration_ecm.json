@@ -1,0 +1,105 @@
+{
+  "engle_granger": [
+    {
+      "sample": "full, 176 months",
+      "long-run equation": "petrol ~ crude INR/litre",
+      "EG tau": -1.71,
+      "5% critical": -3.37,
+      "p-value": 0.674,
+      "cointegrated at 5%?": "no"
+    },
+    {
+      "sample": "full, 176 months",
+      "long-run equation": "petrol ~ crude INR/litre + trend",
+      "EG tau": -1.68,
+      "5% critical": -3.84,
+      "p-value": 0.881,
+      "cointegrated at 5%?": "no"
+    },
+    {
+      "sample": "full, 176 months",
+      "long-run equation": "petrol ~ Brent + USD/INR",
+      "EG tau": -2.26,
+      "5% critical": -3.79,
+      "p-value": 0.612,
+      "cointegrated at 5%?": "no"
+    },
+    {
+      "sample": "training, 152 months",
+      "long-run equation": "petrol ~ crude INR/litre",
+      "EG tau": -1.51,
+      "5% critical": -3.38,
+      "p-value": 0.757,
+      "cointegrated at 5%?": "no"
+    },
+    {
+      "sample": "training, 152 months",
+      "long-run equation": "petrol ~ crude INR/litre + trend",
+      "EG tau": -3.47,
+      "5% critical": -3.84,
+      "p-value": 0.107,
+      "cointegrated at 5%?": "no"
+    },
+    {
+      "sample": "training, 152 months",
+      "long-run equation": "petrol ~ Brent + USD/INR",
+      "EG tau": -3.02,
+      "5% critical": -3.8,
+      "p-value": 0.233,
+      "cointegrated at 5%?": "no"
+    }
+  ],
+  "long_run_full": {
+    "intercept": 52.09699280871142,
+    "beta": 0.8204374669610857,
+    "r2": 0.46357683022085416
+  },
+  "ecm_train": {
+    "train_end": "2024-10",
+    "lags_p_q": [
+      2,
+      1
+    ],
+    "long_run_beta": 0.8330447135376223,
+    "alpha": 0.004443872629159034,
+    "alpha_p": 0.8262261202679161,
+    "half_life_months": null,
+    "r2": 0.2752370551597805,
+    "n": 149
+  },
+  "passthrough_by_regime": [
+    {
+      "sample": "whole window",
+      "months": "2012-06 to 2026-10",
+      "n": 173,
+      "cum_passthrough": 0.22456232296102438,
+      "se": 0.0816676856433085,
+      "p_value": 0.0059648315750442755,
+      "r2": 0.11941286779011195
+    },
+    {
+      "sample": "market-linked (Mar-2012..Apr-2022)",
+      "months": "2012-06 to 2022-04",
+      "n": 119,
+      "cum_passthrough": 0.5168326276183657,
+      "se": 0.13055584475345305,
+      "p_value": 7.535591027676922e-05,
+      "r2": 0.41437996542762734
+    },
+    {
+      "sample": "administered (May-2022..Oct-2026)",
+      "months": "2022-05 to 2026-10",
+      "n": 54,
+      "cum_passthrough": -0.008811595070722253,
+      "se": 0.054195806614064236,
+      "p_value": 0.8708427303270095,
+      "r2": 0.23157072558094394
+    }
+  ],
+  "asymmetry_market_linked": {
+    "passthrough_of_increases": 0.7784202611308841,
+    "passthrough_of_decreases": 0.5460230249705267,
+    "difference_p_value": 0.48517386786220595,
+    "n": 120
+  }
+}

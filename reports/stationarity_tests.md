@@ -1,0 +1,10 @@
+# Unit-root tests (176 months, 5% level)
+
+Levels: constant + trend. Differences: constant. ADF H0 = unit root; KPSS H0 = stationary.
+
+| series                          | ADF level (p)   | KPSS level (p)   | ADF diff (p)    | KPSS diff (p)   | order   |
+|:--------------------------------|:----------------|:-----------------|:----------------|:----------------|:--------|
+| Brent crude (USD/bbl)           | -1.46 (0.842)   | 0.29 (<= 0.01)   | -9.10 (0.0000)  | 0.31 (>= 0.10)  | I(1)    |
+| USD/INR (INR per USD)           | -2.65 (0.256)   | 0.21 (0.013)     | -11.40 (0.0000) | 0.07 (>= 0.10)  | I(1)    |
+| Delhi petrol (INR/litre)        | -2.32 (0.425)   | 0.21 (0.011)     | -8.05 (0.0000)  | 0.08 (>= 0.10)  | I(1)    |
+| Crude cost (INR/litre, derived) | -1.21 (0.909)   | 0.29 (<= 0.01)   | -9.37 (0.0000)  | 0.28 (>= 0.10)  | I(1)    |

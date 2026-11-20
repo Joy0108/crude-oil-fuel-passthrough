@@ -1,0 +1,40 @@
+[
+  {
+    "window": "primary: last 24 months",
+    "train": "2012-03 to 2024-10",
+    "test": "2024-11 to 2026-10",
+    "sarima_order": "(0, 1, 2)x(0, 0, 0, 12)",
+    "ecm_lags_p_q": [
+      2,
+      1
+    ],
+    "rmse_no_change": 1.0872004759932745,
+    "rmse_sarima": 0.9768135105309012,
+    "rmse_ecm": 2.3770261612691446,
+    "mae_sarima": 0.3509014505451991,
+    "mae_ecm": 1.4317438702500045,
+    "ecm_vs_sarima_rmse_pct": 143.34493080232104,
+    "dm_stat": 1.9163561553134314,
+    "dm_p_value": 0.06782895543979597,
+    "months_with_price_change": 3
+  },
+  {
+    "window": "robustness: last 24 market-linked months",
+    "train": "2012-03 to 2020-04",
+    "test": "2020-05 to 2022-04",
+    "sarima_order": "(2, 1, 1)x(0, 0, 0, 12)",
+    "ecm_lags_p_q": [
+      1,
+      1
+    ],
+    "rmse_no_change": 3.4696359439188034,
+    "rmse_sarima": 3.4031134185961798,
+    "rmse_ecm": 3.687518825167714,
+    "mae_sarima": 2.607784117885273,
+    "mae_ecm": 3.175427000366365,
+    "ecm_vs_sarima_rmse_pct": 8.357212105168532,
+    "dm_stat": 0.7742758984528265,
+    "dm_p_value": 0.4466543837335329,
+    "months_with_price_change": 23
+  }
+]
